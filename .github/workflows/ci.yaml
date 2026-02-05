@@ -12,7 +12,7 @@ jobs:
   matix-pip:
     name: Train and Save the Model
     runs-on: ubuntu-latest
-    stratergy: 
+    strategy: 
       matix:
         python-version: [3.11,3.12]
       steps:
