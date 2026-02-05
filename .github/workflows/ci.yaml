@@ -15,7 +15,7 @@ jobs:
     strategy: 
       matrix:
         python-version: [3.11,3.12]
-      steps:
+    steps:
         - name: Checkout 
           uses: actions/checkout@v4
         
@@ -39,4 +39,4 @@ jobs:
           uses: actions/upload-artifacts@v4
           with:
             name: ml-artifacts-${{ matrix.python-version }}-${{ github.run.id }}
-            path: artifacts
+            path: artifacts  
