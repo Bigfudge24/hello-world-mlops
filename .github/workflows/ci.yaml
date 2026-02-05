@@ -13,7 +13,7 @@ jobs:
     name: Train and Save the Model
     runs-on: ubuntu-latest
     strategy: 
-      matix:
+      matrix:
         python-version: [3.11,3.12]
       steps:
         - name: Checkout 
